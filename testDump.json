@@ -7,7 +7,7 @@ def:
   sundayIsFree: true
   priority: 10
   asap: false
-  perJobLatestStart: false
+  perJobLatestStart: true
   lateStartAction: doNotRun
   matchingCriteria:
     type: previous
