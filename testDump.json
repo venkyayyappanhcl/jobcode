@@ -19,7 +19,7 @@ def:
       type: executable
       task:
         executable:
-          interactive: true
+          interactive: false
           suffix: ""
           script: |-
             cd C:\
