@@ -1,0 +1,40 @@
+---
+kind: JobStream
+def:
+  folder: /VENKY/
+  name: DEMO_WINDOWS
+  workstation: /V_WIN_LAP
+  saturdayIsFree: true
+  sundayIsFree: true
+  priority: 10
+  asap: false
+  perJobLatestStart: false
+  lateStartAction: doNotRun
+  matchingCriteria:
+    type: previous
+  resourceDependencies: []
+  jobs:
+  - name: TEST_JOB1
+    workstation: /V_WIN_LAP
+    jobDefinition:
+      type: executable
+      task:
+        executable:
+          interactive: false
+          suffix: ""
+          script: |-
+            cd C:\
+            dir
+          credential: {}
+      recovery:
+        action: STOP
+        repeatAffinity: false
+    priority: 10
+    asap: false
+    lateStartAction: doNotRun
+    lateAction: continue
+    resourceDependencies: []
+    minDurationAction: continue
+    maxDurationAction: continue
+    skipLateAction: overlap
+
