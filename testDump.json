@@ -4,7 +4,7 @@ def:
   folder: /VENKY/
   name: DEMO_WINDOWS
   workstation: /V_WIN_LAP
-  saturdayIsFree: true
+  saturdayIsFree: false
   sundayIsFree: true
   priority: 10
   asap: false
